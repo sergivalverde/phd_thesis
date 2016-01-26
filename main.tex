@@ -1,0 +1,175 @@
+\documentclass[12pt,openright,a4paper,english]{book}
+%\usepackage[inner=2cm, bottom=2.5cm, top=2.5cm, width=12cm, headsep=10pt,dvips]{geometry}
+\usepackage{amssymb, amsmath} %Some extra symbols + mathcommands
+%\usepackage{makeidx} %If you want to generate an index, automatically
+\usepackage{epsf,graphicx,subfig} %If you want to include postscript graphics
+\usepackage[printonlyused]{acronym}
+\usepackage{color}
+\usepackage{babel}
+%\usepackage{pgfplotstable,booktabs,array,colortbl,siunitx} %thats for loading tables directly... pgfplotstable
+\usepackage{rotating}% In order to have landspace tables http://tex.stackexchange.com/questions/19017/how-to-place-a-table-on-a-new-page-with-landscape-orientation-without-clearing-t
+
+%\usepackage{pstricks}
+%\usepackage{tikz,xifthen}
+%\usepackage[underline=true,rounded corners=false]{pgf-umlsd}
+%\usetikzlibrary{calc}
+%\usetikzlibrary{arrows,shadows}
+%\usetikzlibrary{decorations.text,decorations.markings,shapes,patterns,fit}
+%\usetikzlibrary{positioning}
+
+\usepackage{scalefnt,lmodern}
+%\usepackage[style=numeric,backend=bibtex]{biblatex}
+\usepackage [autostyle, english = american]{csquotes}
+\usepackage{multirow}
+\usepackage{epigraph}
+\usepackage{mdframed}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage[active]{srcltx}
+%\usepackage[nodots,nocompress]{numcompress}
+\usepackage{hhline}
+\usepackage{colortbl}
+\usepackage{fancyhdr}
+\usepackage{fancyvrb}
+\usepackage[bookmarks]{hyperref}
+
+\setlength{\epigraphwidth}{8cm}
+%\addbibresource{IEEEabrv.bib}
+%\addbibresource{nomsabrv.bib}
+%\addbibresource{treball.bib}
+
+\newcommand*{\ch}{\checkmark}
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+\newenvironment{dedication}
+    {\vspace{6ex}\begin{quotation}\begin{center}\begin{em}}
+    {\par\end{em}\end{center}\end{quotation}}
+
+%%---------------------------------------------------
+%% MARGES
+%%---------------------------------------------------
+\setlength{\textwidth}{15cm} \setlength{\textheight}{21cm}
+\setlength{\headsep}{1.5cm} \setlength{\parindent}{0.6cm}
+\oddsidemargin 1cm \evensidemargin -0.1cm \topmargin 0cm
+%\setlength{\parskip}{1ex}
+
+
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{%\markboth {Chapter \thechapter. {\ #1}}{}}
+\ifnum\value{chapter}>0
+  \markboth{Chapter \thechapter{}. #1}{}%
+\else
+  \markboth{#1}{#1}%
+\fi}
+\renewcommand{\sectionmark}[1]{\markright {\thesection{}. #1}{}}
+\fancyhf{}
+\fancyhead[LE,RO]{\textbf{\thepage}}
+\fancyhead[LO]{\nouppercase{\textbf{\rightmark}}}
+\fancyhead[RE]{\nouppercase{\textbf{\leftmark}}}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}} % Style for when a plain pagestyle is specified
+
+
+% Removes the header from odd empty pages at the end of chapters
+\makeatletter
+\renewcommand{\cleardoublepage}{
+\clearpage\ifodd\c@page\else
+\hbox{}
+\vspace*{\fill}
+\thispagestyle{empty}
+\newpage
+\fi}
+
+
+
+\begin{document}
+
+%%--------------------------------------------------------------------------------
+%% COVER PAGE
+%%--------------------------------------------------------------------------------
+%\include{chapters/title_page}
+\pagestyle{empty}
+\cleardoublepage
+
+%%-----------------------------------------------------------------
+%%% dedication
+%%%-----------------------------------------------------------------
+%\vspace*{2cm}
+%\pagestyle{empty}
+%\begin{dedication}
+%~~~~
+%\end{dedication}
+%\cleardoublepage
+
+
+%-----------------------------------------------------------------
+%% PREFACE
+%%-----------------------------------------------------------------
+% acknowledgments
+\frontmatter
+\pagestyle{fancy}
+\setlength{\parskip}{1ex}
+\pagenumbering{roman}
+\include{chapters/acknowledgments}
+
+% publications
+\include{chapters/publications}
+
+% acronyms
+\include{chapters/acronyms}
+
+%\listoffigures
+%\addcontentsline{toc}{chapter}{List of figures} 
+%\listoftables
+%\addcontentsline{toc}{chapter}{List of tables} 
+
+% abstracts in English, Catalan and Spanish.
+%\include{Abstract}
+%\include{Resum}
+%\include{Resumen}
+
+\tableofcontents
+\acresetall
+
+
+
+%%--------------------------------------------------------------------------------
+%% CHAPTERS
+%%--------------------------------------------------------------------------------
+\mainmatter
+%\pagestyle{mainmatter}
+
+\pagenumbering{arabic}
+\include{chapters/introduction}
+
+
+
+%%------------------------------------------------------------------------
+%% APPENDIX
+%%------------------------------------------------------------------------
+%\appendix
+%\renewcommand{\chaptermark}[1]{\markboth{Appendix \thechapter. Analytical tools}{}}
+%\include{chapters/appendix/appendix}
+
+
+
+%%%-----------------------------------------------------------------
+%%% CLOENDA
+%%%-----------------------------------------------------------------
+%\backmatter
+%\include{glossary}
+%\include{notat}
+
+
+
+%%--------------------------------------------------------------------------------
+%% BIBLIOGRAFIA
+%%--------------------------------------------------------------------------------
+%\bibliographystyle{IEEEtran}
+%\bibliography{chapters/biblio_thesis.bib}
+
+\end{document} 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
