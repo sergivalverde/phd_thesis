@@ -1,0 +1,78 @@
+%Conclusions
+
+\chapter{Conclusions}
+% also add contributions
+
+This thesis synthesizes our work during the last three years. Following the same objectives and stages proposed in the Introduction chapter, we summarize the main conclusions of this thesis: 
+
+\begin{itemize}
+
+\item We analyzed the state of the art of tissue segmentation methods. This first stage aimed to review different proposed tissue segmentation techniques in order to understand their advantages and drawbacks. As part of the resulting analysis published in the\textit{ Journal of Magnetic Resonance Imaging} in January of 2014,  
+\textbf{our results showed a higher accuracy on several methods that incorporated morphological prior information and/or spatial constraints such as FAST, SPVASEG and SPM8. These methods were also less prone to changes in acquisition sequences and intensity inhomogeneities}.
+
+\item We studied the effect of WM lesions on tissue segmentation of MS patient images. The second stage to cover was focused on the analysis of the effects of WM lesions on the tissue distributions. Six of the analyzed methods on Chapter \ref{chapter:chapter_2} were evaluated on multi-center 1.5T MS data from different scanners. 
+Related to the previous stage, our results stressed \textbf{the necessity of adding morphological prior information and/or spatial constraints in automated brain tissue
+segmentation, not only to overcome inherent MRI artifacts but also as an important component to deal with WM lesions}. Furthermore, our analysis of the effects of WM lesions on tissue volume showed that \textbf{the inclusion of WM lesions on tissue segmentation not only biased the total tissue volume measurements by the addition of miss-classified lesion voxels, but also by the effect of these lesions in observed differences in normal-appearing tissue volume.} The entire analysis was published in the \textit{American Journal of Neuroradiology} in February 2015.
+
+\item We proposed a new technique to reduce the effects of WM lesions on tissue segmentation of MS patient images. The third stage required first to compare the accuracy of different proposed lesion filling techniques in the literature with the aim to afterwards propose a new technique to reduce the effects of WM lesions on tissue segmentation. \textbf{The proposed lesion filling method was shown effective in different data and independently of the tissue segmentation method used afterwards. The proposed approach outperformed the rest of methods on both 1.5T and 3T data when FAST was used, while its performances was similar or lower to the best available strategy when SPM8 was used.} The proposed lesion filling method was  published in the\textit{ NeuroImage: Clinical journal} in August of 2014. \textbf{Furthermore, we released a public version on the proposed method that can be freely downloaded from our research team web page}\footnote{The latest version on the proposed lesion filling method can be download from \texttt{http://atc.udg.edu/nic/slfToolbox/index.html}}.
+
+\item We analyzed the effect of automated WM lesion segmentation and filling on the tissue segmentation. During the fourth stage proposed, we analyzed the accuracy of two state-of-the-art automated pipelines that incorporate unsupervised lesion segmentation, lesion filling and tissue segmentation on MS data.  As shown in published paper in the \textit{NeuroImage: Clinical journal} in October of 2015, our analysis showed that \textbf{pipelines that incorporated automated lesion segmentation and filling were capable to reduce significantly the impact of WM lesions on tissue segmentation, performing similarly to the pipelines that required manual expert intervention}.
+
+
+\item Finally, we proposed a new fully automated tissue segmentation method for MS patient images containing lesions. The main goal of the thesis was to propose a fully automated tissue segmentation method capable to deal with images of MS patients. As shown in Chapter \ref{chapter:chapter_6}, the proposed method incorporated all the major insights obtained from previous stages with the aim of provide a robust fully automated tissue approach for accurate brain volume measurements. Our results showed that  \textbf{when compared with existent tissue segmentation methods, the presented approach yielded a higher accuracy in tissue segmentation while the influence of MS lesions on tissue segmentation was lower or similar to the best state-of-the-art pipeline incorporating automated lesion segmentation and filling}. This work has been submitted for publication in the\textit{ Medical Image Analysis journal }in February 2016. \textbf{As part of the goal, we also released a public version on the proposed method that can be freely downloaded from our research team web page}\footnote{A public version of the method can be download from \texttt{http://atc.udg.edu/nic/msseg/index.html}}.
+
+\end{itemize}
+
+
+% \section{Contributions}
+
+% With the development of the present thesis, we believe that several contributions have been done to the scientific community. We summarize them as follows:
+
+% \begin{itemize}
+	
+% 	\item Experimental tests have been carried out with several datasets of different characteristics: a) 1.5T data with 45 MS patients manually annotated by experts to obtain the GT lesion segmentation; b) 3T data with 10 Lupus patients and 10 schizophrenic patients from the public NAMIC database. c) 3T simulated data with 10 brain cases from the BrainWeb; d) 3T DTI data with 10 MS patients and 100 simulations of MS atrophy; e) 3T data with 70 MS patients with different lesion loads from the Hospital Vall d'Hebron. These cases were also manually annotated by experts; f) 3T dataset with 20 Lupus patients with different lesion loads from the Hospital Cl\'{i}nic, University of Barcelona.
+	
+% 	\item A novel method for excluding the brain from the rest of the head, obtaining promising results compared to the state-of-the-art. The method has been tested with simulated and real MS patients. We have shown that this algorithm is stable and permits to obtain satisfactory skull stripping results when dealing with axial oriented MRI images acquired at 1.5T or 3T. This method has produced a conference abstract (ECTRIMS 2013) and a journal paper (Computer Methods and Programs in Biomedicine 2014).
+	
+% 	\item A novel MC registration approach to move T1w and FA images to a healthy control target space. The registration pipeline has been tested in people with MS with atrophy and marked ventricular enlargement. We proposed our own atrophy generation framework for the experimental evaluation. We have shown that MC registration offers significant improvements in alignment accuracy compared to SC or T1w approaches. This work has produced two conference abstracts (ISMRM 2012, ISMRM 2013) and a journal paper (Functional Neurology 2015).
+	
+% 	\item An exhaustive analysis on the impact of the pre-processing methods with special focus on the WML segmentation. We have developed our skull-striping method and compared the performance with BET, BSE and SPM. We have tested several configurations for both image denoising~\cite{Perona-1990} and intensity inhomogeneity correction with SPM~\cite{Ashburner-2000} and N3~\cite{Sled-1998}. Finally, we have also compared different pipelines in terms of flux execution, aiming to propose a standard pipeline for this purpose.
+	
+% 	\item A novel method to segment WML using T1w and FLAIR images. Our tool is publicly available as an SPM8/12 extension toolbox [\url{http://dixie.}], being easily adaptable and with a default configuration to be used straightaway. We have provided a user-friendly GUI for doctors to interact with. The tool has been tested (with different parameter configuration) in both MS and Lupus patients. From this approach we have published a conference abstract (ECTRIMS 2015), a conference paper (SPIE 2016), and two journal papers (Neuroradiology 2015 for MS and Frontiers in Human Neuroscience 2016 for Lupus)
+	
+% \end{itemize}
+
+
+\section{Future work}
+
+Unfortunately, there are several aspects that have been not investigated during this thesis. One of the main limitations on several stages has been the lack of 3T images with high lesion load. As pointed out in Chapters \ref{chapter:chapter_5} and \ref{chapter:chapter_6}, the low mean lesion load of the cohorts analyzed has not allowed to investigate better the performance of the analyzed pipelines in the presence of images with higher lesion load. In the case of the proposed tissue segmentation method, we believe that an additional analysis of the performance of the method with images containing lesions with higher lesion load would be helpful not only to analyze the robustness of the proposed algorithm, but also to investigate the benefits of adding other image channels such as T2 or PD. 
+
+Secondly, although the proposed tissue segmentation method has been designed for cross-sectional data, there is a increasingly clinical interest in the measurements of longitudinal changes in tissue volume. In tins aspect, we believe that the proposed method would be also adapted to longitudinal changes by re-adapting the pipeline with prior registering of time point images before tissue segmentation. This is in fact one of the goals that our team wants to tackle first within the research framework of the BiomarkEM.cat project, in order to release suitable tools that can be used in clinical settings. 
+
+ 
+
+% LIMITATIONS AJNR2015
+
+%The present study is not free of limitations. The principal limitation is the lack of tissue expert annotations, given that the study
+%incorporated a relatively large number of images from 3 different hospitals and this task was time-consuming. A second limitation
+%of the study is the sensitivity of the tissue segmentation methods to changes in the skull-stripping mask. Errors in the brain mask
+%may lead to the inclusion of blood vessels such as the internal carotid arteries with hyperintense signal intensity, which might
+%bias the tissue distributions. A final limitation of the study is the inherent difficulty of comparing previous studies, given the dif-
+%ferences in the scanner protocols used to acquire the images of patients with MS. The differences in the acquisition protocol may
+%cause the observed differences in the lesion intensity profile compared with previous works. 8,10 Our study shows that such an in-
+%tensity profile introduces variations in GM and WM tissue distributions.
+
+% LIMITATIONS NICL2014
+
+%The present study is not free from limitations. The most important one is the lack of images of MS patients with brain tissue expert annotations. 1) All images from MS patients taken from  \citet{Diez2013} have been only provided with lesion annotations delineated by a trained expert, but not brain tissue annotations. To overpass this limitation, we have registered WM lesions from MS patients into healthy images as performed in \citet{Battaglini2012}, and double-checked that registered lesions have replaced voxels segmented as WM by FAST and SPM8.  This strategy has a negligible impact on the performance of the filling-methods analyzed in this study, because we assure \textit{a-priori} that generated lesions are on WM, and moreover none of the methods use information from the artificial lesions generated.  2) Skull stripping method to deal with lesion filling
+
+
+% limitations 
+%This study however endorses some limitations. The lack of a database consisting of MS images with manual annotations of tissue, limits our analysis to the differences in tissue volume with respect to images where expert lesion annotations were lesion filled before tissue segmentation. However, the previous analysis has been shown in previous studies to be effective to evaluate the effects of WM lesions on tissue segmentation \citep{Battaglini2012,Valverde2015b, Valverde2015c}.  Furthermore, the mean lesion sizes of the MS cohorts do not allow to investigate better the performance of the proposed method in the presence of images with higher lesion load. 
+%As a future work, we believe that an additional study on MS with manual tissue annotated masks and higher lesion load would be helpful not only to analyze the benefits of the proposed algorithm in MS images, but also to investigate the benefits of adding other image channels such as T2 or PD. Furthermore, although the method was designed for cross-sectional data, we are sensible to the fact that the current approach  may be benefited by the possibility to evaluate longitudinal changes in tissue volume. %In this aspect, we will investigate those points in order to improve the usability and accuracy of the method. 
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:
