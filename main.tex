@@ -84,31 +84,34 @@
 \newpage
 \fi}
 
-
-
-\begin{document}
-
 %%--------------------------------------------------------------------------------
 %% COVER PAGE
 %%--------------------------------------------------------------------------------
-%\include{chapters/title_page}
+
+\include{chapters/title_page}
+
+\begin{document}
 \pagestyle{empty}
-\cleardoublepage
+\maketitle
+
 
 %%-----------------------------------------------------------------
 %%% dedication
 %%%-----------------------------------------------------------------
+
 %\vspace*{2cm}
 %\pagestyle{empty}
 %\begin{dedication}
-%~~~~
-%\end{dedication}
-%\cleardoublepage
-
+%\hspace{9cm} \textbf{Als meus pares}\\
+%\hspace{9cm} ~~~~~~~~To my parents\\
+%\textsc{}\end{dedication}
+%\textsc{}\cleardoublepage
+%
 
 %-----------------------------------------------------------------
 %% PREFACE
 %%-----------------------------------------------------------------
+
 % acknowledgments
 \frontmatter
 \pagestyle{fancy}
@@ -127,7 +130,12 @@
 %\listoftables
 %\addcontentsline{toc}{chapter}{List of tables} 
 
+
+% -------------------------------------------------------------
 % abstracts in English, Catalan and Spanish.
+% -------------------------------------------------------------
+
+
 %\include{Abstract}
 %\include{Resum}
 %\include{Resumen}
