@@ -5,7 +5,9 @@
 \usepackage{epsf,graphicx,subfig} %If you want to include postscript graphics
 \usepackage[printonlyused]{acronym}
 \usepackage{color}
-\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[catalan]{babel}
 %\usepackage{pgfplotstable,booktabs,array,colortbl,siunitx} %thats for loading tables directly... pgfplotstable
 \usepackage{rotating}% In order to have landspace tables http://tex.stackexchange.com/questions/19017/how-to-place-a-table-on-a-new-page-with-landscape-orientation-without-clearing-t
 
@@ -94,7 +96,7 @@
 \pagestyle{empty}
 %\maketitle
 
-
+\thispagestyle{empty}
 \include{chapters/coberta}
 \include{chapters/portada}
 
@@ -129,22 +131,21 @@
 \include{chapters/acronyms}
 
 \listoffigures
-\addcontentsline{toc}{chapter}{List of figures} 
+%\addcontentsline{toc}{chapter}{List of figures} 
 %\listoftables
 %\addcontentsline{toc}{chapter}{List of tables} 
-
 
 % -------------------------------------------------------------
 % abstracts in English, Catalan and Spanish.
 % -------------------------------------------------------------
 
+\tableofcontents
+%\acresetall
 
 \include{chapters/abstract}
-%\include{chapters/resum}
-%\include{chapters/resumen}
+\include{chapters/resum}
+\include{chapters/resumen}
 
-\tableofcontents
-\acresetall
 
 
 
