@@ -29,7 +29,7 @@ Magnetic Resonance Imaging (MRI) is a noninvasive medical imaging technique  use
     %\vspace{-3cm}
     \includegraphics[width=1\textwidth]{figures/figure_1.eps}
   \end{center}
-    \caption[MRI image modalities]{MRI image modalities. A) T1-weighted (T1-w) image sequence. B) T2-weighted (T2-w) image sequence. C) Proton Density-weighted (PD-w) image sequence. D) Fluid Attenuated Inversion Recovery (FLAIR) sequence. MS plaques are shown inside red circles on the FLAIR modality. MS plaques are hypointense with respect to GM and WM in T2-w, PD-w and FLAIR sequences, while hypointense with respect to WM on the T1-w modality.}
+    \caption[MRI image modalities]{MRI image modalities. A) T1-w image sequence. B) T2-w image sequence. C) PD-w image sequence. D) FLAIR sequence. MS plaques are shown inside red circles on the FLAIR modality. MS plaques are hypointense with respect to GM and WM in T2-w, PD-w and FLAIR sequences, while hypointense with respect to WM on the T1-w modality.}
     \label{mri_modalities}
 \end{figure*}
 
@@ -52,7 +52,7 @@ Furthermore, inherent characteristics of the MRI acquisition process such as dif
     %\vspace{-3cm}
     \includegraphics[width=1.0\textwidth]{figures/figure_2.eps}
   \end{center}
-    \caption[MRI pre-processing steps]{MRI pre-processing steps. A) T1-weighted (T1-w) image sequence. B) Computed brain mask using the BET approach \cite{Smith2002} and C) skull stripped T1-w sequence  . D) Estimated T1-w bias-field using the N3 method proposed by \cite{Sled1998}.}
+    \caption[MRI pre-processing steps]{MRI pre-processing steps. A) T1-w image sequence. B) Computed brain mask using the BET approach \cite{Smith2002} and C) skull stripped T1-w sequence  . D) Estimated T1-w bias-field using the N3 method proposed by \cite{Sled1998}.}
     \label{preprocessing_mri}
 \end{figure*}
 
@@ -93,13 +93,13 @@ This thesis is located within the framework of different research projects assoc
 
 \begin{enumerate}
 
-\item $[2009-2012]$ PI09/91918 ``SALEM: Segmentaci\'{o}n Autom\'{a}tica de Lesiones de Esclerosis M\'{u}ltiple en im\'{a}genes de resonancia magn\'{e}tica'' awarded by the Instituto Carlos III. 
+\item $[$ 2009 - 2012 $]$ PI09/91918 ``SALEM: Segmentaci\'{o}n Autom\'{a}tica de Lesiones de Esclerosis M\'{u}ltiple en im\'{a}genes de resonancia magn\'{e}tica'' awarded by the Instituto Carlos III. 
 
-\item $[2009-2012]$ VALTEC09-1-0025 ``SALEM: Eines per a la segmentaci\'{o} autom\`{a}tica de lesions d'Esclerosi M\'{u}ltiple en resson\`{a}ncia magn\`{e}tica'' awarded in 2009 by the Generalitat de Catalunya within the ``Projectes de valoritzaci\'{o} VALTEC''.
+\item $[$ 2009 - 2012 $]$ VALTEC09-1-0025 ``SALEM: Eines per a la segmentaci\'{o} autom\`{a}tica de lesions d'Esclerosi M\'{u}ltiple en resson\`{a}ncia magn\`{e}tica'' awarded in 2009 by the Generalitat de Catalunya within the ``Projectes de valoritzaci\'{o} VALTEC''.
 
-\item $[2015-2017]$ TIN2014-55710-R: NICOLE: ``Herramientas de neuroimagen para mejorar el diagnosis y el seguimiento cl\'{i}nico de los pacientes con Esclerosis M\'{u}ltiple" awarded in 2014 by the spanish call Retos de investigaci\'{o}n 2014.
+\item $[$ 2015 - 2017 $]$ TIN2014-55710-R: NICOLE: ``Herramientas de neuroimagen para mejorar el diagnosis y el seguimiento cl\'{i}nico de los pacientes con Esclerosis M\'{u}ltiple'' awarded in 2014 by the spanish call Retos de investigaci\'{o}n 2014.
 
-\item $[2015-2019]$ BiomarkEM.cat: ``New technologies applied to clinical practice for obtaining biomarkers of  atrophy and lesions in magnetic resonance images of patients with multiple sclerosis''. Awarded in 2015 by the Fundaci\'{o} la Marat\'{o} de TV3.
+\item $[$ 2015 - 2019 $]$ BiomarkEM.cat: ``New technologies applied to clinical practice for obtaining biomarkers of  atrophy and lesions in magnetic resonance images of patients with multiple sclerosis''. Awarded in 2015 by the Fundaci\'{o} la Marat\'{o} de TV3.
 
 \end{enumerate}
 
@@ -125,7 +125,7 @@ As part of the SALEM, NICOLE and BiomarkEM.cat research project frameworks, the 
 	\fbox{\parbox[c]{0.88\textwidth}{\textbf{to develop a novel, fully automated brain tissue segmentation method capable of computing accurate tissue volume measurements in images of MS patients.}}}
 \end{center}
 
-Different stages have to be covered first in order to fulfill the main goal. All these stages can be considered as sub-objectives that allow us to gain a better knowledge of the different parts that compose a fully automated tissue segmentation method for MS images containing lesions. In what follows, we detail these proposed sub-goals: 
+\noindent Different stages have to be covered first in order to fulfill the main goal. All these stages can be considered as sub-objectives that allow us to gain a better knowledge of the different parts that compose a fully automated tissue segmentation method for MS images containing lesions. In what follows, we detail these proposed sub-goals: 
 
 \begin{itemize}
 
@@ -143,17 +143,17 @@ Different stages have to be covered first in order to fulfill the main goal. All
 
 \noindent This objective refers to brain tissue segmentation of MS patient images into GM, WM CSF in transversal studies. We do not concentrate on the differences in tissue volume at different stages, but on the effect of WM lesions in the final tissue segmentation. All these stages will be carried out using not only public databases but also different 1.5T and 3T databases of MS patients from the collaborating hospital centers. \textbf{Furthermore, as part of the goals of the research frameworks in which this thesis is located, implementations of all the methods proposed will be publicly available to the research community}.
 
-\subsection{Document structure}
+\section{Document structure}
 \label{sec:label}
 
 A graphic description of the structure of this thesis linking all the chapters presented is shown in Figure \ref{document_structure}. Connections between the chapters depict the conceptual link between them. The rest of the document is organized as follows:
 
 \begin{figure*}[top]
   \begin{center}
-%    \vspace{-3cm}
+    \vspace{-1cm}
     \includegraphics[width=1\textwidth]{figures/document_schema.eps}
   \end{center}
-    \caption[Organization of the document]{Organization of the document. Preliminary Chapter 1 describes the research context and main objectives of this thesis. Chapters 2 to 6 introduce the main contributions of this work based on the different projects submitted or published in research journals. Chapter 7 presents a general discussion of the results obtained from Chapters 2 to 6. Finally, the main conclusions and proposed future work are presented in Chapter 8. Connections between chapters depict a conceptual link between them.}
+    \caption[Organization of the document]{\small Organization of the document. Preliminary Chapter 1 describes the research context and main objectives of this thesis. Chapters 2 to 6 introduce the main contributions of this work based on the different projects submitted or published in research journals. Chapter 7 presents a general discussion of the results obtained from Chapters 2 to 6. Finally, the main conclusions and proposed future work are presented in Chapter 8. Connections between chapters depict a conceptual link between them.}
     \label{document_structure}
 \end{figure*}
 
@@ -164,8 +164,7 @@ A graphic description of the structure of this thesis linking all the chapters p
 
 \item \textbf{Chapter 3. Evaluating the effects of white matter multiple sclerosis lesions on the volume estimation of 6 brain tissue segmentation methods.} After reviewing different tissue segmentation techniques using public data, we perform a detailed analysis of the effects of WM lesions on the brain tissue volume measurements of six of these tissue segmentation methods using MS data from different hospital centers collaborating in the research projects. This chapter is based on our paper published in  the \textit{American Journal of Neuroradiology} in 2015. 
 
-\item \textbf{Chapter 4. A white matter lesion-filling approach to improve brain tissue volume measurements.} In this chapter, we propose a new technique to fill WM lesions on 1.5T and 3T** TODO Chapter 6: definició del journal és incorrecta
- data, validating its accuracy with respect to other methods in the literature. This chapter is based on the paper published in the \textit{NeuroImage: Clinical} journal in 2014. 
+\item \textbf{Chapter 4. A white matter lesion-filling approach to improve brain tissue volume measurements.} In this chapter, we propose a new technique to fill WM lesions on 1.5T and 3T data, validating its accuracy with respect to other methods in the literature. This chapter is based on the paper published in the \textit{NeuroImage: Clinical} journal in 2014. 
 
 \item \textbf{Chapter 5. Quantifying brain tissue volume in multiple sclerosis with automated lesion segmentation and filling.} In this chapter we present a detailed  evaluation of the performance of different automated pipelines that incorporate lesion segmentation, lesion filling and tissue segmentation on MS data. This analysis is novel in the sense that this is the first work to evaluate two automated pipelines on MS data. This chapter is based on the paper published in the \textit{NeuroImage: Clinical} journal in 2015.
 
@@ -179,3 +178,4 @@ A graphic description of the structure of this thesis linking all the chapters p
 %%% mode: latex
 %%% TeX-master: "../main"
 %%% End:
+
