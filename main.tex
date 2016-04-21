@@ -59,6 +59,9 @@
 \oddsidemargin 1cm \evensidemargin -0.1cm \topmargin 0cm
 %\setlength{\parskip}{1ex}
 
+% manual tunning 
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
 
 \setlength{\headheight}{15pt}
 \pagestyle{fancy}
@@ -104,13 +107,21 @@
 %%% dedication
 %%%-----------------------------------------------------------------
 
-%\vspace*{2cm}
-%\pagestyle{empty}
-%\begin{dedication}
-%\hspace{9cm} \textbf{Als meus pares}\\
-%\hspace{9cm} ~~~~~~~~To my parents\\
-%\textsc{}\end{dedication}
-%\textsc{}\cleardoublepage
+~\\
+\newpage
+\vspace*{3cm}
+\pagestyle{empty}
+\begin{dedication}
+\scriptsize
+\begin{changemargin}{5cm}{-8cm} 
+\hspace{0cm} \textbf{A mis padres, cuyo sacrificio ha alimentado siempre mis sueños}\\
+\hspace{0cm} ~~~~~~~~~~~~To my parents, whose sacrifice has always nourished my dreams\\
+%your text here  
+\end{changemargin}
+\textsc{}
+\end{dedication}
+\textsc{}
+\cleardoublepage
 %
 
 %-----------------------------------------------------------------
@@ -122,7 +133,7 @@
 \pagestyle{fancy}
 \setlength{\parskip}{1ex}
 \pagenumbering{roman}
-%\include{chapters/acknowledgments}
+\include{chapters/acknowledgments}
 
 % publications
 \include{chapters/publications}

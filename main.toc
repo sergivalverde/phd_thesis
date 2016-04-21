@@ -1,15 +1,15 @@
-\contentsline {chapter}{Abstract}{xi}{chapter*.7}
-\contentsline {chapter}{Resum}{xv}{chapter*.8}
-\contentsline {chapter}{Resumen}{xix}{chapter*.9}
+\contentsline {chapter}{Abstract}{xiii}{chapter*.8}
+\contentsline {chapter}{Resum}{xvii}{chapter*.9}
+\contentsline {chapter}{Resumen}{xxi}{chapter*.10}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Research context}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Multiple Sclerosis}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Magnetic Resonance Imaging in MS}{2}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Image analysis in MS}{3}{subsection.1.1.3}
-\contentsline {subsubsection}{Pre-processing of MRI images}{3}{section*.11}
-\contentsline {subsubsection}{Automated lesion segmentation}{4}{section*.13}
-\contentsline {subsubsection}{Automated brain tissue segmentation in MS}{5}{section*.14}
-\contentsline {subsubsection}{Lesion filling}{6}{section*.15}
+\contentsline {subsubsection}{Pre-processing of MRI images}{3}{section*.12}
+\contentsline {subsubsection}{Automated lesion segmentation}{4}{section*.14}
+\contentsline {subsubsection}{Automated brain tissue segmentation in MS}{5}{section*.15}
+\contentsline {subsubsection}{Lesion filling}{6}{section*.16}
 \contentsline {section}{\numberline {1.2}Research background}{7}{section.1.2}
 \contentsline {section}{\numberline {1.3}Objectives}{8}{section.1.3}
 \contentsline {section}{\numberline {1.4}Document structure}{10}{section.1.4}
